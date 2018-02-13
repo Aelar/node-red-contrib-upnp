@@ -1,0 +1,26 @@
+<script type="text/javascript">
+    RED.nodes.registerType('upnp_discover',{
+        category: 'input',
+        color: '#cf6834',
+        defaults: {
+            name: {value:""}
+        },
+        inputs:0,
+        outputs:1,
+        icon: "file.png",
+        label: function() {
+            return this.name||"upnp_discover";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="upnp_discover">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="upnp_discover">
+    <p>That node discover UPnP devices</p>
+</script>
